@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MaterialApp(
-    home: Home()
-));
+void main() => runApp(MaterialApp(home: Home()));
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -16,19 +14,32 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[700],
       ),
       body: Center(
-        child: Text(
-          "Rifki Romadhan Kimak",
-          style: TextStyle(
-            fontSize: 32,
-            fontWeight: FontWeight.w600,
-            color: Colors.amber[700],
-            fontStyle: FontStyle.italic,
-            letterSpacing: 2,
-            fontFamily: "IndieFlower",
-            // fontFamily: "Belanosima"
-          ),
-        ),
-      ),
+          // child: Image(
+          //     // Online
+          //     // image: NetworkImage("https://registrasi.unsoed.ac.id/infomhs/foto/C1A022041"),
+          //     // Offline
+          //     // image: AssetImage("assets/img2.jpg"),
+          //     ),
+
+          child:
+              // Image.network(
+              //     "https://registrasi.unsoed.ac.id/infomhs/foto/C1A022041"),
+              Image.asset("assets/img1.jpg")),
+
+      // body: Center(
+      //   child: Text(
+      //     "Rifki Romadhan Kimak",
+      //     style: TextStyle(
+      //       fontSize: 32,
+      //       fontWeight: FontWeight.w600,
+      //       color: Colors.amber[700],
+      //       fontStyle: FontStyle.italic,
+      //       letterSpacing: 2,
+      //       fontFamily: "IndieFlower",
+      //       // fontFamily: "Belanosima"
+      //     ),
+      //   ),
+      // ),
       floatingActionButton: FloatingActionButton(
         onPressed: null,
         child: Text("Click"),
@@ -37,6 +48,3 @@ class Home extends StatelessWidget {
     );
   }
 }
-
-
-
