@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-    home: Scaffold(
+    home: Home()
+));
+
+class Home extends StatelessWidget {
+  const Home({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       appBar: AppBar(
         title: Text("Rifki Romadhan"),
         centerTitle: true,
@@ -9,12 +17,12 @@ void main() => runApp(MaterialApp(
       ),
       body: Center(
         child: Text(
-          "Rifki Romadhan",
+          "Rifki Romadhan Kimak",
           style: TextStyle(
             fontSize: 32,
             fontWeight: FontWeight.w600,
             color: Colors.amber[700],
-            // fontStyle: FontStyle.italic,
+            fontStyle: FontStyle.italic,
             letterSpacing: 2,
             fontFamily: "IndieFlower",
             // fontFamily: "Belanosima"
@@ -26,5 +34,9 @@ void main() => runApp(MaterialApp(
         child: Text("Click"),
         backgroundColor: Colors.red[700],
       ),
-    )
-));
+    );
+  }
+}
+
+
+
