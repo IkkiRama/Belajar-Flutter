@@ -13,22 +13,92 @@ class Home extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.red[700],
         ),
-        body: Center(
-          child: ElevatedButton.icon(
-            onPressed: null,
-            icon: const Icon(Icons.message, color: Colors.white),
-            label: const Text("JANCOOOKKKK",
-                style: TextStyle(color: Colors.white)),
-            style: ButtonStyle(
-                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                    RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18.0),
-                )),
-                backgroundColor: MaterialStateProperty.all(Colors.indigo[700])),
-          ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: <Widget>[
+            Row(
+              children: <Widget>[
+                Text("Hello"),
+                Text(" wORLD"),
+              ],
+            ),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 40),
+              color: Colors.grey[700],
+              child: const Text("Rifki Romadhan"),
+            ),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 60),
+              color: Colors.grey[700],
+              child: const Text("Rifki Romadhan"),
+            ),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 30),
+              color: Colors.grey[700],
+              child: const Text("Rifki Romadhan"),
+            ),
+            ElevatedButton(
+              onPressed: null,
+              child: Text("Elevation Button",
+                  style: TextStyle(color: Colors.white)),
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.blue)),
+            ),
+            ElevatedButton(
+              onPressed: null,
+              child: Text("Elevation Button",
+                  style: TextStyle(color: Colors.white)),
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.blue)),
+            ),
+          ],
         ),
 
-        //body: Center(
+        // body: Row(
+        //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //   crossAxisAlignment: CrossAxisAlignment.end,
+        //   children: <Widget>[
+        //     Container(
+        //       // padding: const EdgeInsets.,
+        //       // padding: const EdgeInsets.only(left: 40, top: 50),
+        //       // padding: const EdgeInsets.fromLTRB(10, 30, 60, 100),
+        //       // padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+        //       // padding: const EdgeInsets.all(30),
+        //       color: Colors.grey[700],
+        //       child: const Text("Rifki Romadhan"),
+        //     ),
+        //     ElevatedButton(
+        //       onPressed: null,
+        //       child: Text("Elevation Button",
+        //           style: TextStyle(color: Colors.white)),
+        //       style: ButtonStyle(
+        //           backgroundColor: MaterialStateProperty.all(Colors.blue)),
+        //     ),
+        //     Container(
+        //       padding: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+        //       color: Colors.yellow,
+        //       child: Text("JANCOK"),
+        //     )
+        //   ],
+        // ),
+
+        // body : Center(
+        //   child: ElevatedButton.icon(
+        //     onPressed: null,
+        //     icon: const Icon(Icons.message, color: Colors.white),
+        //     label: const Text("JANCOOOKKKK",
+        //         style: TextStyle(color: Colors.white)),
+        //     style: ButtonStyle(
+        //         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+        //             RoundedRectangleBorder(
+        //           borderRadius: BorderRadius.circular(18.0),
+        //         )),
+        //         backgroundColor: MaterialStateProperty.all(Colors.indigo[700])),
+        //   ),
+        // ),
+
+        // body:Center(
         //     child: OutlinedButton(
         //         onPressed: null,
         //         child: Text("Outlined Button",
